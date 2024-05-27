@@ -1,0 +1,19 @@
+# spring.application.name=admin-be
+
+# 启动端口
+server:
+  port: 8080
+
+# 数据源配置
+spring:
+  datasource:
+    username: root
+    password: xiyuroot2009
+    url: jdbc:mysql://47.109.60.122:3306/backend_db>useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 配置 mybatis
+mybatis:
+  mapper-locations: classpath:com/xiyu/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
